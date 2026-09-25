@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Betting Score Tiers · College Football Picks Demo Site</title>
+<link rel="stylesheet" href="css/site.css">
+<script>
+try {
+  if (sessionStorage.getItem("cfp_demo_unlocked") === "1") {
+    document.documentElement.classList.add("unlocked");
+  }
+} catch (e) {}
+</script>
+</head>
+<body>
+<div class="page" id="page">
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">College Football Picks Demo Site</a>
+    <p class="header-kicker">Betting Score Tiers</p>
+  </div>
+</header>
+<main class="wrap">
+<p class="back"><a href="index.html">Back to menu</a></p>
+<h1>Betting Score Tiers</h1>
+<div class="lede"><p class="signoff"><em>What each level means · Shared CFB + NFL ladder · Entertainment / analysis only</em></p></div>
+<section class="card intro">
+<p>Betting Score is <strong>1–99</strong> measuring <strong>strength of betting interest / edge</strong>, not how sure we are of the final score. There is no score of 100 — no guaranteed Locks, never 100% confidence in a game. The same game gets the same score on the Daily Menu and the Report. Higher tiers mean stronger interest — always read the Report Bottom line for Play (or No bet).</p>
+</section>
+<section class="card table-card">
+<div class="tier-ladder">
+<span class="tier tier-ignore">Ignore</span>
+<span class="tier tier-weak">Weak</span>
+<span class="tier tier-playable">Playable</span>
+<span class="tier tier-strong">Strong</span>
+<span class="tier tier-prime">Prime</span>
+<span class="tier tier-lock">Lock</span>
+</div>
+<table class="stack-table">
+<thead><tr><th scope="col">Tier</th><th scope="col">Range</th><th scope="col">What it means</th></tr></thead>
+<tbody>
+<tr>
+<td data-label="Tier"><span class="tier tier-ignore">Ignore</span></td>
+<td data-label="Range">1–49</td>
+<td data-label="What it means">A pass. Little or no betting edge vs the number. Expect Stay away / No bet on the Bottom line.</td>
+</tr>
+<tr>
+<td data-label="Tier"><span class="tier tier-weak">Weak</span></td>
+<td data-label="Range">50–59</td>
+<td data-label="What it means">Soft interest only. Something mild is there, but not enough to lean hard. Fine to watch the line; usually not enough to treat as a play by itself.</td>
+</tr>
+<tr>
+<td data-label="Tier"><span class="tier tier-playable">Playable</span></td>
+<td data-label="Range">60–69</td>
+<td data-label="What it means">Real candidate. The matchup clears the bar for a serious look. Interesting enough to dig into — not an automatic play. Read the Report before deciding.</td>
+</tr>
+<tr>
+<td data-label="Tier"><span class="tier tier-strong">Strong</span></td>
+<td data-label="Range">70–79</td>
+<td data-label="What it means">Clear edge with real evidence behind it. This is a normal high-interest board game when the number fits. Still check injuries, price, and the Report Bottom line.</td>
+</tr>
+<tr>
+<td data-label="Tier"><span class="tier tier-prime">Prime</span></td>
+<td data-label="Range">80–89</td>
+<td data-label="What it means">Top-shelf interest. Several signals line up (models, injuries, market, situation). Uncommon. We run an extra honesty check before publishing this tier.</td>
+</tr>
+<tr>
+<td data-label="Tier"><span class="tier tier-lock">Lock</span></td>
+<td data-label="Range">90–99</td>
+<td data-label="What it means">Best-of-board rare. Strong, well-documented edge and the number still looks available. Expect this infrequently — treat it as exceptional, not everyday. Ceiling is 99 on purpose.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="card">
+<h2>Keep the signals separate</h2>
+<ul>
+<li><strong>Final Score Confidence</strong> (Low / Medium / High) is separate — it is about the projected final score, not Betting Score.</li>
+<li>Scores are earned from evidence; higher tiers are not handed out by calendar.</li>
+<li>Entertainment / analysis only — not financial or betting advice. Paper bankrolls only.</li>
+</ul>
+<p class="signoff"><em>Use the tier to frame the research, not to skip it.</em></p>
+<p class="signoff"><em>Ace · CFB · 2026</em></p>
+</section>
+
+</main>
+</div>
+<div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gate-title">
+  <form class="gate-card" id="gate-form">
+    <p class="gate-kicker">Demo access</p>
+    <h2 id="gate-title">Enter the password</h2>
+    <label for="gate-password">Password</label>
+    <input id="gate-password" type="password" autocomplete="off">
+    <button type="submit">Continue</button>
+    <p class="gate-error" id="gate-error" hidden>That password is not right.</p>
+  </form>
+</div>
+<script src="js/gate.js"></script>
+</body>
+</html>
