@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CFB Daily Menu · 2026-09-25 · College Football Picks Demo Site</title>
+<link rel="stylesheet" href="css/site.css">
+<script>
+try {
+  if (sessionStorage.getItem("cfp_demo_unlocked") === "1") {
+    document.documentElement.classList.add("unlocked");
+  }
+} catch (e) {}
+</script>
+</head>
+<body>
+<div class="page" id="page">
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">College Football Picks Demo Site</a>
+    <p class="header-kicker">CFB Daily Menu · 2026-09-25</p>
+  </div>
+</header>
+<main class="wrap">
+<h1>CFB Daily Menu · 2026-09-25</h1>
+<section class="card intro">
+<p><strong>Entertainment / analysis only — not betting advice.</strong> Paper analysis for fans. No real sportsbook bets.</p>
+<p><strong>Slate:</strong> Friday night Power 4 · <strong>2 in-scope</strong> (Big Ten + ACC)</p>
+<p><strong>As-of lines:</strong> ~6:30 AM ET · Yahoo / FanDuel / Dimers consensus</p>
+<p><strong>Scoring:</strong> CFB Betting Score rubric <strong>v1.3</strong></p>
+<p><strong>Out of scope (not listed):</strong> Army@Temple, Howard@Rutgers, Navy@UAB, Harvard@Brown</p>
+</section>
+<section class="card table-card">
+<table class="stack-table games-table">
+<thead><tr><th scope="col">Rank</th><th scope="col">Matchup</th><th scope="col">Records</th><th scope="col">Kick (ET)</th><th scope="col">Spread</th><th scope="col">Total</th><th scope="col">Weather</th><th scope="col">Betting Score</th><th scope="col">Tier</th></tr></thead>
+<tbody>
+<tr>
+<td data-label="Rank">1</td>
+<td data-label="Matchup"><a class="row-link" href="games/northwestern-at-indiana.html">Northwestern Wildcats @ No. 5 Indiana Hoosiers</a></td>
+<td data-label="Records">NW 2–0 · IU 3–0</td>
+<td data-label="Kick (ET)">8:00 PM · FOX · Memorial Stadium</td>
+<td data-label="Spread">Indiana <strong>−20.5</strong> / Northwestern <strong>+20.5</strong></td>
+<td data-label="Total"><strong>49.5</strong></td>
+<td data-label="Weather">~66°F · ENE ~5 mph · dry</td>
+<td data-label="Betting Score"><strong>63</strong></td>
+<td data-label="Tier"><span class="tier tier-focus">Focus</span></td>
+</tr>
+<tr>
+<td data-label="Rank">2</td>
+<td data-label="Matchup"><a class="row-link" href="games/clemson-at-california.html">Clemson Tigers @ California Golden Bears</a></td>
+<td data-label="Records">CLEM 2–1 · CAL 2–1</td>
+<td data-label="Kick (ET)">10:30 PM · ESPN · California Memorial Stadium</td>
+<td data-label="Spread">Clemson <strong>−1.5</strong> / California <strong>+1.5</strong></td>
+<td data-label="Total"><strong>50.5</strong></td>
+<td data-label="Weather">~63°F · W ~2 mph · dry</td>
+<td data-label="Betting Score"><strong>60</strong></td>
+<td data-label="Tier"><span class="tier tier-focus">Focus</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="card notes">
+<h2>Notes</h2>
+<ul>
+<li>Menu lists <strong>Betting Score + tier only</strong> — no Lean / Suggestion / play name (Play belongs on the Report Bottom line only).</li>
+<li>NW@IU: spread opened near Indiana −24.5 and moved ~4 toward Northwestern (TeamRankings / SportsLine open stamps); face uses Yahoo/FanDuel/Dimers <strong>−20.5</strong>. SportsLine free teaser leans Under (~48). IU 0–3 covering as big favorites; Dimers still ~95% IU win. Focus = worth full research; fair number after the move can still be <strong>No bet</strong>.</li>
+<li>CLEM@CAL: board flipped from Cal home −1.5 open to Clemson −1.5; Dimers slight Cal win% (51.3%); SportsLine free Under (~45). Calm Berkeley weather. Focus with conflicting signals — <strong>No bet</strong> still OK.</li>
+<li>Availability: NW missing DB Braden Turner + DL Callen Campbell (Hoosier Huddle Big Ten mirror); Clemson without Woods / Gipson / Haynes (ACC SI mirrors). Final gameday reports pending.</li>
+</ul>
+<p class="signoff"><em>Ace · CFB · 2026</em></p>
+</section>
+<div class="menu-end">
+  <a class="aces-card" href="daily-aces.html">
+    <span class="card-copy">
+      <span class="aces-kicker">Special Access</span>
+      <strong>Daily Aces</strong>
+    </span>
+    <img class="menu-portrait" src="images/ace.png" alt="Ace">
+  </a>
+  <div class="soon-card">
+    <span class="card-copy">
+      <span class="soon-kicker">Coming Soon...</span>
+      <strong>Blair's Betts</strong>
+    </span>
+    <img class="menu-portrait" src="images/blair.png" alt="Blair">
+  </div>
+</div>
+
+</main>
+</div>
+<div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gate-title">
+  <form class="gate-card" id="gate-form">
+    <p class="gate-kicker">Demo access</p>
+    <h2 id="gate-title">Enter the password</h2>
+    <label for="gate-password">Password</label>
+    <input id="gate-password" type="password" autocomplete="off">
+    <button type="submit">Continue</button>
+    <p class="gate-error" id="gate-error" hidden>That password is not right.</p>
+  </form>
+</div>
+<script src="js/gate.js"></script>
+</body>
+</html>

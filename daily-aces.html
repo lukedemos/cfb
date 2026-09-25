@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CFB Daily Aces · 2026-09-25 · College Football Picks Demo Site</title>
+<link rel="stylesheet" href="css/site.css">
+<script>
+try {
+  if (sessionStorage.getItem("cfp_demo_unlocked") === "1") {
+    document.documentElement.classList.add("unlocked");
+  }
+} catch (e) {}
+</script>
+</head>
+<body>
+<div class="page" id="page">
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">College Football Picks Demo Site</a>
+    <p class="header-kicker">CFB Daily Aces · 2026-09-25</p>
+  </div>
+</header>
+<main class="wrap">
+<p class="back"><a href="index.html">Back to menu</a></p>
+<h1>CFB Daily Aces · 2026-09-25</h1>
+<div class="lede"><p>Entertainment / analysis only — not betting advice. Paper bankroll only. No personal names.</p></div>
+<section class="card">
+<h2>Bankroll chips (before new tickets)</h2>
+<ul class="chips">
+<li><span>Book</span><strong>$1,140.91</strong></li>
+<li><span>Open risk</span><strong>$0.00</strong></li>
+<li><span>Available cash</span><strong>$1,140.91</strong></li>
+<li><span>Settled</span><strong>2–1–0 · P/L +$140.91</strong></li>
+</ul>
+<p><strong>Slate note:</strong> Two in-scope Power 4 Friday games — Northwestern @ No. 5 Indiana (8:00 PM FOX) and Clemson @ California (10:30 PM ESPN). Both research tiers landed <strong>Focus</strong>. Out of scope skipped: Army@Temple, Howard@Rutgers, Navy@UAB, Harvard@Brown.</p>
+</section>
+<section class="card">
+<h2>Ace’s tickets (straights)</h2>
+<p><strong>No paper tickets tonight.</strong> Prefer Focus+ for straights, but both Focus games fail the fair-number / conflicting-signals check. Ledger not written for new risk.</p>
+</section>
+<section class="card">
+<h2>Parlay of the Day</h2>
+<p><strong>No parlay today.</strong> Thin two-game Focus slate with no clean ticket on either side — no combo.</p>
+</section>
+<section class="card">
+<h2>Passes</h2>
+<table class="stack-table">
+<thead><tr><th scope="col">Game</th><th scope="col">Why passed</th></tr></thead>
+<tbody>
+<tr>
+<td data-label="Game">Northwestern @ No. 5 Indiana (IU −20.5 / O/U 49.5, 8:00 PM ET FOX)</td>
+<td data-label="Why passed">Focus <strong>63</strong> — dog number improved ~4 pts and IU is 0–3 covering as a juice favorite, but Dimers/FPI still crush IU win%; number already looks fair after the move. Focus means worth full research, not a must-play. Proj <strong>Northwestern 14 – Indiana 34</strong>, Projection Confidence <strong>Medium</strong>.</td>
+</tr>
+<tr>
+<td data-label="Game">Clemson @ California (CLEM −1.5 / O/U 50.5, 10:30 PM ET ESPN)</td>
+<td data-label="Why passed">Focus <strong>60</strong> — Dimers slight Cal lean + SportsLine free Under after a flip to Clemson −1.5, but flipped pick’em, freshman QB road continuity, and IDL/nickel outs keep signals conflicted. Proj <strong>Clemson 24 – California 23</strong>, Projection Confidence <strong>Low</strong>.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="card">
+<h2>Bankroll snapshot (after posting)</h2>
+<p>Book <strong>$1,140.91</strong> · Open <strong>$0.00</strong> · Available <strong>$1,140.91</strong> · New tickets <strong>none (ledger untouched)</strong></p>
+</section>
+
+</main>
+</div>
+<div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gate-title">
+  <form class="gate-card" id="gate-form">
+    <p class="gate-kicker">Demo access</p>
+    <h2 id="gate-title">Enter the password</h2>
+    <label for="gate-password">Password</label>
+    <input id="gate-password" type="password" autocomplete="off">
+    <button type="submit">Continue</button>
+    <p class="gate-error" id="gate-error" hidden>That password is not right.</p>
+  </form>
+</div>
+<script src="js/gate.js"></script>
+</body>
+</html>
